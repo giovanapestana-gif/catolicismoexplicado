@@ -14,7 +14,7 @@ Primeira execução instala `three` (npm) e `piper-tts` (pip) sozinha. A voz (63
 ## Procedimento da tarefa noturna (rodando às 3h, vídeo sai às 8h)
 
 1. `git clone` este repositório (ou `git pull`). Cada vídeo é `projects/AAAA-MM-DD-slug.json`.
-2. Se o JSON do dia **existe**, use-o. Se **não existe**, crie-o a partir do roteiro que veio na tarefa, seguindo as regras abaixo, e rode `./stills.sh`.
+2. O roteiro de cada dia está em **`roteiros.md`** (seção `# DD/MM — TÍTULO`; só o bloco `### ROTEIRO` é narrado; a `### LEGENDA` é o texto do post). Se `projects/<id>.json` **existe**, use-o. Se **não existe**, crie-o a partir do roteiro, seguindo as regras abaixo. Em qualquer caso rode `python3 check.py projects/<id>.json`: ele garante que a narração é idêntica ao roteiro (se a Giovana editou o roteiro, refaça as cenas alteradas até dar OK).
 3. **Confira o conteúdo** do roteiro (doutrina e liturgia católicas). Se algo estiver impreciso, **não altere o texto**: gere o vídeo mesmo assim e avise a Giovana na mensagem final, dizendo o trecho e o motivo.
 4. Rode `./stills.sh`, **abra `work/<id>/sheet.jpg` com a ferramenta Read** e corrija qualquer cena com: personagem cortado ou fora de quadro, personagem sobre outro, objeto invisível, cena escura demais, título/legenda cobrindo o rosto. Refaça até a folha ficar limpa (máx. 3 rodadas).
 5. Rode `./make.sh`, confira com `ffprobe` (1080x1920, 30 fps, duração ≈ a do `timings.json`) e envie o MP4 com `SendUserFile` (status proactive) + notificação push.
