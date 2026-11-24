@@ -1,0 +1,769 @@
+{
+ "id": "2026-11-25-sao-tarcisio",
+ "title": "Quem foi São Tarcísio?",
+ "cast": {
+  "padre": {
+   "kind": "padre",
+   "vestment": "#b3262d",
+   "skin": "#e8b48a",
+   "hair": "#4a2f1b",
+   "hairStyle": "short"
+  },
+  "coroinha": {
+   "kind": "coroinha",
+   "skin": "#c98f62",
+   "hair": "#161616",
+   "hairStyle": "short"
+  },
+  "tarcisio": {
+   "kind": "cristao",
+   "scale": 0.92,
+   "skin": "#e8b48a",
+   "hair": "#4a2f1b",
+   "hairStyle": "short",
+   "tunic": "#d9c9a3"
+  },
+  "tarcisio_santo": {
+   "kind": "santo",
+   "scale": 0.92,
+   "skin": "#e8b48a",
+   "hair": "#4a2f1b",
+   "hairStyle": "short",
+   "tunic": "#f4f1ea",
+   "mantle": "#b3262d"
+  },
+  "rom1": {
+   "kind": "romano",
+   "skin": "#c98f62",
+   "hair": "#161616",
+   "tunic": "#8a3a2a"
+  },
+  "rom2": {
+   "kind": "romano",
+   "skin": "#f3c9a0",
+   "hair": "#7a5230",
+   "tunic": "#6a4a8a"
+  },
+  "sold": {
+   "kind": "soldado",
+   "skin": "#a86b45",
+   "hair": "#161616"
+  },
+  "celebrante": {
+   "kind": "padre",
+   "vestment": "#e8e0cc",
+   "skin": "#f3c9a0",
+   "hair": "#8c8c8c",
+   "hairStyle": "short"
+  },
+  "cris1": {
+   "kind": "cristao",
+   "skin": "#c98f62",
+   "hair": "#2b1d12",
+   "tunic": "#c9b48a"
+  },
+  "cris2": {
+   "kind": "cristao",
+   "skin": "#f3c9a0",
+   "hair": "#7a5230",
+   "tunic": "#b0a07a"
+  },
+  "cris3": {
+   "kind": "cristao",
+   "skin": "#a86b45",
+   "hair": "#161616",
+   "hairStyle": "long",
+   "skirt": true,
+   "tunic": "#a98f7a"
+  },
+  "anjoA": {
+   "kind": "anjo",
+   "skin": "#f3c9a0",
+   "hair": "#c9a15a"
+  },
+  "anjoB": {
+   "kind": "anjo",
+   "skin": "#c98f62",
+   "hair": "#2b1d12"
+  }
+ },
+ "scenes": [
+  {
+   "say": "Você sabia que um jovem chegou a dar a própria vida para proteger a Eucaristia?",
+   "set": "igreja",
+   "tag": "Catolicismo Explicado",
+   "speaker": "padre",
+   "chars": [
+    {
+     "id": "padre",
+     "pos": [
+      0,
+      0
+     ],
+     "pose": "talk2"
+    }
+   ],
+   "props": [],
+   "cam": {
+    "frame": "full",
+    "dist": 5.6,
+    "lookY": 1.85,
+    "h": 1.6,
+    "move": {
+     "dist": -0.4
+    }
+   }
+  },
+  {
+   "say": "Conheça São Tarcísio, conhecido como o mártir da Eucaristia.",
+   "set": "ceu",
+   "tag": "São Tarcísio",
+   "speaker": "tarcisio_santo",
+   "chars": [
+    {
+     "id": "tarcisio_santo",
+     "pos": [
+      0,
+      0
+     ],
+     "pose": "hold",
+     "mute": true
+    }
+   ],
+   "props": [
+    {
+     "type": "ciborium",
+     "attach": {
+      "id": "tarcisio_santo",
+      "at": "chest"
+     }
+    }
+   ],
+   "cam": {
+    "frame": "medium",
+    "dist": 4.2,
+    "lookY": 1.5,
+    "h": 1.5,
+    "ang": -12,
+    "move": {
+     "ang": 24
+    }
+   }
+  },
+  {
+   "say": "São Tarcísio viveu em Roma, no século III, durante um período em que os cristãos eram perseguidos pelo Império Romano.",
+   "set": "roma",
+   "tag": "Roma · século III",
+   "speaker": "tarcisio",
+   "chars": [
+    {
+     "id": "tarcisio",
+     "pos": [
+      -1.3,
+      1.0
+     ],
+     "pose": "walk",
+     "move": {
+      "to": [
+       0.2,
+       0.2
+      ]
+     },
+     "mute": true
+    },
+    {
+     "id": "sold",
+     "pos": [
+      1.3,
+      -1.6
+     ],
+     "rot": -35,
+     "pose": "idle",
+     "mute": true
+    }
+   ],
+   "props": [
+    {
+     "type": "spear",
+     "attach": {
+      "id": "sold",
+      "at": "R"
+     }
+    }
+   ],
+   "cam": {
+    "frame": "full",
+    "dist": 8.6,
+    "focus": [
+     0.1,
+     0,
+     0
+    ],
+    "lookY": 1.3,
+    "h": 1.6,
+    "move": {
+     "ang": -10
+    }
+   }
+  },
+  {
+   "say": "Naquela época, os cristãos precisavam celebrar a Missa escondidos, muitas vezes nas catacumbas.",
+   "set": "catacumba",
+   "tag": "Missa nas catacumbas",
+   "speaker": "celebrante",
+   "chars": [
+    {
+     "id": "celebrante",
+     "pos": [
+      0,
+      -1.3
+     ],
+     "pose": "offer",
+     "mute": true
+    },
+    {
+     "id": "cris1",
+     "pos": [
+      -1.1,
+      0.5
+     ],
+     "rot": 10,
+     "pose": "kneel",
+     "mute": true
+    },
+    {
+     "id": "cris2",
+     "pos": [
+      1.1,
+      0.5
+     ],
+     "rot": -10,
+     "pose": "kneel",
+     "mute": true
+    }
+   ],
+   "props": [
+    {
+     "type": "tomb",
+     "pos": [
+      0,
+      0,
+      -2.6
+     ]
+    },
+    {
+     "type": "candle",
+     "pos": [
+      -0.5,
+      0.54,
+      -2.6
+     ]
+    },
+    {
+     "type": "candle",
+     "pos": [
+      0.5,
+      0.54,
+      -2.6
+     ]
+    }
+   ],
+   "cam": {
+    "frame": "full",
+    "dist": 6.2,
+    "lookY": 1.1,
+    "h": 1.8,
+    "move": {
+     "dist": -0.8
+    }
+   }
+  },
+  {
+   "say": "Segundo a tradição, Tarcísio era um jovem que servia à Igreja e tinha um profundo amor pela Eucaristia.",
+   "set": "catacumba",
+   "tag": "Amor pela Eucaristia",
+   "speaker": "tarcisio",
+   "chars": [
+    {
+     "id": "tarcisio",
+     "pos": [
+      0,
+      -0.6
+     ],
+     "pose": "kneel"
+    }
+   ],
+   "props": [
+    {
+     "type": "tomb",
+     "pos": [
+      0,
+      0,
+      -2.4
+     ]
+    },
+    {
+     "type": "chalice",
+     "pos": [
+      -0.35,
+      0.58,
+      -2.4
+     ]
+    },
+    {
+     "type": "host",
+     "pos": [
+      0.3,
+      0.6,
+      -2.4
+     ]
+    },
+    {
+     "type": "candle",
+     "pos": [
+      0.7,
+      0.54,
+      -2.4
+     ]
+    }
+   ],
+   "cam": {
+    "frame": "medium",
+    "dist": 3.9,
+    "lookY": 1.0,
+    "h": 1.4,
+    "move": {
+     "dist": -0.6
+    }
+   }
+  },
+  {
+   "say": "Certo dia, ele se ofereceu para levar a Sagrada Comunhão aos cristãos que estavam presos e não podiam participar da celebração.",
+   "set": "prisao",
+   "tag": "Cristãos presos",
+   "speaker": "tarcisio",
+   "chars": [
+    {
+     "id": "tarcisio",
+     "pos": [
+      0,
+      0.8
+     ],
+     "pose": "hold"
+    },
+    {
+     "id": "cris1",
+     "pos": [
+      -1.1,
+      -2.4
+     ],
+     "pose": "sit",
+     "mute": true
+    },
+    {
+     "id": "cris2",
+     "pos": [
+      1.1,
+      -2.4
+     ],
+     "pose": "sit",
+     "mute": true
+    }
+   ],
+   "props": [
+    {
+     "type": "ciborium",
+     "attach": {
+      "id": "tarcisio",
+      "at": "chest"
+     }
+    }
+   ],
+   "cam": {
+    "frame": "full",
+    "dist": 6.0,
+    "lookY": 1.1,
+    "h": 1.5,
+    "move": {
+     "dist": -0.8
+    }
+   }
+  },
+  {
+   "say": "Durante o caminho, alguns homens perceberam que ele carregava algo junto ao peito e começaram a exigir que ele mostrasse o que estava escondendo.",
+   "set": "roma",
+   "tag": "Pelo caminho",
+   "speaker": "rom1",
+   "chars": [
+    {
+     "id": "tarcisio",
+     "pos": [
+      -1.3,
+      -0.5
+     ],
+     "pose": "carrywalk",
+     "move": {
+      "to": [
+       -0.5,
+       0.5
+      ],
+      "at": [
+       0,
+       0.6
+      ]
+     },
+     "mute": true
+    },
+    {
+     "id": "rom1",
+     "pos": [
+      1.9,
+      -0.8
+     ],
+     "pose": "walk",
+     "move": {
+      "to": [
+       0.9,
+       0.5
+      ],
+      "at": [
+       0.1,
+       0.7
+      ]
+     }
+    },
+    {
+     "id": "rom2",
+     "pos": [
+      2.1,
+      -1.5
+     ],
+     "pose": "walk",
+     "move": {
+      "to": [
+       1.5,
+       -0.5
+      ],
+      "at": [
+       0.2,
+       0.8
+      ]
+     },
+     "mute": true
+    }
+   ],
+   "props": [
+    {
+     "type": "ciborium",
+     "attach": {
+      "id": "tarcisio",
+      "at": "chest"
+     }
+    }
+   ],
+   "cam": {
+    "frame": "full",
+    "dist": 8.2,
+    "focus": [
+     0.4,
+     0,
+     0
+    ],
+    "lookY": 1.25,
+    "h": 1.6,
+    "move": {
+     "ang": 8
+    }
+   }
+  },
+  {
+   "say": "Mas Tarcísio se recusou a entregar aquilo que carregava: o Corpo de Cristo.",
+   "set": "roma",
+   "tag": "Ele se recusou",
+   "speaker": "tarcisio",
+   "chars": [
+    {
+     "id": "tarcisio",
+     "pos": [
+      -0.5,
+      0.5
+     ],
+     "pose": "hold"
+    },
+    {
+     "id": "rom1",
+     "pos": [
+      0.9,
+      0.5
+     ],
+     "rot": -80,
+     "pose": "point",
+     "mute": true
+    },
+    {
+     "id": "rom2",
+     "pos": [
+      1.4,
+      -0.7
+     ],
+     "rot": -70,
+     "pose": "point",
+     "mute": true
+    }
+   ],
+   "props": [
+    {
+     "type": "ciborium",
+     "attach": {
+      "id": "tarcisio",
+      "at": "chest"
+     }
+    }
+   ],
+   "cam": {
+    "frame": "full",
+    "dist": 6.4,
+    "focus": [
+     0.35,
+     0,
+     0
+    ],
+    "lookY": 1.2,
+    "h": 1.5,
+    "move": {
+     "dist": -0.5
+    }
+   }
+  },
+  {
+   "say": "Ele foi agredido e acabou morrendo, sem permitir que a Eucaristia fosse profanada.",
+   "set": "roma",
+   "tag": "O martírio",
+   "speaker": "tarcisio",
+   "chars": [
+    {
+     "id": "tarcisio",
+     "pos": [
+      -0.4,
+      0.4
+     ],
+     "pose": "fall",
+     "mute": true
+    },
+    {
+     "id": "rom1",
+     "pos": [
+      1.0,
+      0.3
+     ],
+     "rot": -80,
+     "pose": "amazed",
+     "mute": true
+    },
+    {
+     "id": "rom2",
+     "pos": [
+      1.5,
+      -0.8
+     ],
+     "rot": -70,
+     "pose": "amazed",
+     "mute": true
+    }
+   ],
+   "props": [
+    {
+     "type": "ciborium",
+     "attach": {
+      "id": "tarcisio",
+      "at": "chest"
+     }
+    }
+   ],
+   "cam": {
+    "frame": "full",
+    "dist": 6.6,
+    "focus": [
+     0.3,
+     0,
+     0
+    ],
+    "lookY": 1.0,
+    "h": 1.6,
+    "ang": 10,
+    "move": {
+     "dist": 0.4,
+     "h": 0.5
+    }
+   }
+  },
+  {
+   "say": "Por seu testemunho de fé e amor à presença de Jesus na Eucaristia, São Tarcísio ficou conhecido como o mártir da Eucaristia.",
+   "set": "ceu",
+   "tag": "Mártir da Eucaristia",
+   "speaker": "tarcisio_santo",
+   "chars": [
+    {
+     "id": "tarcisio_santo",
+     "pos": [
+      0,
+      0
+     ],
+     "pose": "offer",
+     "mute": true
+    },
+    {
+     "id": "anjoA",
+     "pos": [
+      -1.7,
+      -0.6
+     ],
+     "pose": "idle",
+     "mute": true
+    },
+    {
+     "id": "anjoB",
+     "pos": [
+      1.7,
+      -0.6
+     ],
+     "pose": "idle",
+     "mute": true
+    }
+   ],
+   "props": [
+    {
+     "type": "ciborium",
+     "attach": {
+      "id": "tarcisio_santo",
+      "at": "R"
+     },
+     "off": [
+      0,
+      0.05,
+      0
+     ]
+    }
+   ],
+   "cam": {
+    "frame": "full",
+    "dist": 5.4,
+    "lookY": 1.5,
+    "h": 1.0,
+    "move": {
+     "dist": -0.6
+    }
+   }
+  },
+  {
+   "say": "A história de São Tarcísio nos ensina que servir a Jesus não é apenas cumprir uma função dentro da Igreja, mas reconhecer o valor daquilo que celebramos.",
+   "set": "igreja",
+   "tag": "O que ele nos ensina",
+   "speaker": "padre",
+   "chars": [
+    {
+     "id": "padre",
+     "pos": [
+      0.4,
+      0
+     ],
+     "pose": "talk2"
+    },
+    {
+     "id": "coroinha",
+     "pos": [
+      -1.2,
+      -0.8
+     ],
+     "rot": 15,
+     "pose": "idle",
+     "mute": true
+    }
+   ],
+   "props": [],
+   "cam": {
+    "frame": "medium",
+    "move": {
+     "dist": -0.5
+    }
+   }
+  },
+  {
+   "say": "Que o exemplo desse jovem nos inspire a amar, respeitar e valorizar cada vez mais a Eucaristia!",
+   "set": "igreja",
+   "tag": "Amar a Eucaristia",
+   "speaker": "padre",
+   "chars": [
+    {
+     "id": "padre",
+     "pos": [
+      0.4,
+      0
+     ],
+     "pose": "offer"
+    },
+    {
+     "id": "coroinha",
+     "pos": [
+      -1.2,
+      -0.4
+     ],
+     "rot": 15,
+     "pose": "kneel",
+     "mute": true
+    }
+   ],
+   "props": [
+    {
+     "type": "host",
+     "attach": {
+      "id": "padre",
+      "at": "R"
+     },
+     "off": [
+      0,
+      0.12,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ]
+    }
+   ],
+   "cam": {
+    "frame": "medium",
+    "h": 0.9,
+    "lookY": 1.5,
+    "move": {
+     "dist": -0.4
+    }
+   }
+  },
+  {
+   "say": "Você seria capaz de arriscar a própria vida por aquilo em que acredita?",
+   "set": "igreja",
+   "tag": "E você?",
+   "speaker": "padre",
+   "big": "Você seria capaz de arriscar a própria vida por aquilo em que acredita?",
+   "chars": [
+    {
+     "id": "padre",
+     "pos": [
+      0,
+      0
+     ],
+     "pose": "wave"
+    }
+   ],
+   "props": [],
+   "cam": {
+    "frame": "full",
+    "dist": 5.6,
+    "lookY": 1.85,
+    "h": 1.6
+   }
+  }
+ ]
+}

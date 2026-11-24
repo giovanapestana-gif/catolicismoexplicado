@@ -1,0 +1,8 @@
+{
+  "name": "catolicismo-explicado",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Motor de vídeos 'Catolicismo Explicado' (bonequinhos low-poly 3D)",
+  "type": "module",
+  "dependencies": { "three": "^0.187.0" }
+}
